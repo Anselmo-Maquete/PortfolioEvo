@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png"/>
+    
+    <title>Skills-AnselmoMaquete</title>
+</head>
+<body>
+
+<!--Aqui inicia HEADER-->
+    <header class="section">
+        <div class="content header">
+            <span class="span">MyCode</span>
+            
+            <a class="botao-baras">
+                   <span id="abrir"><i class="fa fa-bars"></i> Navigate</span>
+            </a>
+            
+            <div class="nav">
+            <ul class="navigation-desk">
+                <span id="fechar"><i class="fa fa-times"></i></span>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+            </ul>
+    
+            </div>
+        </div>
+    </header>
+<!--Aqui inicia HEADER-->
+
+<!--Aqui inicia HABILIDADES-->
+    <nav class="section skills-box">
+        
+        <div class="content skills">
+            <h1>Skills</h1>
+            <p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, sunt! Distinctio accusantium <br>delectus enim nisi debitis impedit, quas minima at, voluptas. Maiores ratione <br>consequuntur quidem officia nulla error, at nostrum?</p>
+            
+            <div id="cols">
+                <ul id="limheight" class="tentativa">
+                    <li><i class="fas fa-code"></i> HTML</li>
+                    <li><i class="fab fa-css3-alt"></i> CSS</li>
+                    <li><i class="fab fa-js"></i> JavaScript</li>
+                    <li><i class="fas fa-database"></i> MySQL</li>
+                    <li><i class="fab fa-php"></i> PHP</li>
+                    <li><i class="far fa-images"></i> Adobe PhotoShop</li>
+                    <li><i class="fab fa-google"></i> Google</li>
+                    <li><i class="fab fa-github-square"></i> Git</li>
+                    <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+<!--Aqui termina HABILIDADES-->
+    
+	<script src="jquery-3.5.1.min.js">
+	</script>
+    
+    <script>
+//abrir e fechar NAV
+        $(window).ready(function(){
+            
+            $("#abrir, #fechar").click(function(e){
+                e.preventDefault();
+                
+                $(".nav").toggleClass("active");
+                
+            });
+            
+        });
+	</script>
+    
+    
+</body>
+</html>

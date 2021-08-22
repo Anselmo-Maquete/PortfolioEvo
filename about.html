@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png"/>
+    <link rel="stylesheet" href="css/flag-icon.css">
+    <link rel="stylesheet" href="css/flag-icon.min.css">
+    
+    <title>About-AnselmoMaquete</title>
+</head>
+<body>
+
+<!--Aqui inicia HEADER-->
+    <header class="section">
+        <div class="content header">
+            <span class="span">MyCode</span>
+            
+            <a class="botao-baras">
+                   <span id="abrir"><i class="fa fa-bars"></i> Navigate</span>
+            </a>
+            
+            <div class="nav">
+            <ul class="navigation-desk">
+                <span id="fechar"><i class="fa fa-times"></i></span>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+            </ul>
+    
+            </div>
+                    </div>
+    </header>
+<!--Aqui termina HEADER-->
+    
+<!--Aqui inicia SOBRE-->
+    <nav class="section aboutTest">
+        
+        <div class="content about">
+            
+            <div class="box-about">
+                <h2>FrontEnd Web Developer</h2>
+            
+                <span class="span">
+                Anselmo Maquete
+                </span>
+            
+                <p class="about-paragrafo lead">A young Web developer from Mozambique <span class="flag-icon flag-icon-mz"></span> , since 2020 building experience in related fields. <br>My goal is always try to provide beautiful and creative UIs for the Users, letting them feel comfortable and safe to Browse. <br>As for the moment, i'm open to work, and to contact me simply click the button down below.</p>
+            
+                <a href="#" class="box-link" id="contacto">Contact</a>
+            </div>
+            
+            <img src="images/aprovado.png" alt="" class="img-about">  
+        </div>
+       
+    </nav>
+<!--Aqui termina SOBRE-->
+
+	<script src="jquery-3.5.1.min.js">
+	</script>
+    
+    <script>
+//abrir e fechar NAV
+       $(window).ready(function(){
+           
+          $("#abrir, #fechar").click(function(e){
+              e.preventDefault();
+             
+               $(".nav").toggleClass("active");
+              
+           });
+           
+           $('#contacto').click( function() { alert('EMAIL: Anselmolmaquete@gmail.com'); });
+           
+       });
+           
+	</script>
+    
+</body>
+</html>

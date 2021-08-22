@@ -1,0 +1,259 @@
+/*Inicializacao de ESTILOS*/
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: ;
+    font-family: 'Prompt', sans-serif;
+}
+
+/*Estilos GERAIS*/
+.section{
+    float: left;
+    width: 100%;
+}
+.content{
+    width: 85%;
+    margin: 0 auto;
+}
+
+/*Aqui inicia HEADER*/
+.content.header{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.span{
+    font-size: 3.5em;
+    font-weight: bolder;
+    color: #484848;
+}
+#destaque{
+    color: #c7a1e6;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul>li:not(:last-of-type){
+    margin-right: 85px; 
+}
+ul>li>a{
+    color: #484848;
+    font-size: 26px;
+    transition: all 650ms ease;
+}
+ul>li>a:hover{
+    color: #c7a1e6;
+    transition: all 650ms ease;
+}
+/*Aqui termina HEADER*/
+
+/*Aqui inicia INTRO*/
+/*estilo PARA INTRO e SOBRE*/
+.content.box, .content.about{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content:space-around;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 4em;
+    font-weight: bolder;
+    margin-bottom: 45px;
+}
+
+.box-details{
+    padding: 50px;
+}
+
+.box-paragrafo{
+    margin-bottom: 20px;
+}
+
+.box-link{
+    color: #c7a1e6;
+    font-size: 20px;
+    font-size: bold;
+    background-color: #848484;
+    padding: 8px 15px;
+    border-radius: 16px;
+    transition: all 400ms ease;
+}
+.box-link:hover{
+    color: #fff;
+    transition: all 400ms ease;
+}
+
+.img{
+    width: 55%;
+    float: right
+}
+/*Aqui termina INTRO*/
+
+/*Aqui inicia SOBRE*/
+h2{
+    margin-bottom: 10px;
+    color: #c7a1e6;
+}
+
+.box-about{
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 40px;
+}
+.section.aboutTest{
+    margin-top: 30px;
+}
+.content.about{
+    background-color: #c7a1e6;
+    border-radius: 40px;
+}
+
+.about-paragrafo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img-about{
+    width: 25%;
+    border-radius: 50%;
+    transform: scale(0.7);
+    transition: all 300ms ease
+}
+.img-about:hover{
+    transform: scale(0.8);
+    transition: all 300ms ease;
+    border-radius: 100%;
+}
+/*Aqui termina SOBRE*/
+
+/*Aqui inicia HABILIDADES*/
+#limheight {
+    height: 250px; 
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3; 
+}
+
+#limheight li {
+    display: inline-block;
+}
+
+.section.skills-box{
+    margin-top: 30px;
+}
+.content.skills{
+    background-color: #c7a1e6;
+    border-radius: 40px;
+}
+.content.skills h1{
+    text-align: center;
+    color: #484848;
+}
+
+.skills-description{
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.tentativa{
+    font-size: 15px;
+}
+/*Aqui termina HABILIDADES*/
+
+
+/*BREAKPOINTS*/
+/* inicio TAMANHO MOBILE*/
+@media (max-width: 768px){
+    
+    .botao-baras>span{
+        font-size: 2em;
+        color: #484848;
+        font-weight: bolder;
+    }
+    .botao-baras>span:hover{
+        cursor: pointer;
+    }
+    
+    .nav{
+        height: 100%;
+        width: 200px;
+        right: -100%;
+        padding: 25px;
+/*        background-color: #ccc;*/
+        top: 0px;
+        position: fixed;
+        z-index: 10;
+        background: rgba(60,60,60,0.65);
+        transition: right 700ms linear;
+    }
+    
+    .nav.active{
+        right: 0px;
+         transition: right 700ms linear;
+    }
+    
+    
+    ul>li{
+        padding: 20px 55px;
+        border-bottom: 1px solid #fff;
+    }
+    ul>li>a{
+        color: #fff;
+        font-size: 2em;
+        font-weight: bolder;
+    }
+    ul>span>i{
+        color: #fff;
+    }
+    .content.box{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 25px;
+    }
+    
+    #limheight{
+        height: 650px;
+    }
+    
+    
+}
+/*fim TAMANHO MOBILE*/
+    
+/*inicio TAMANHO DESKTOP*/
+@media (min-width: 769px){
+
+ .botao-baras{
+            display: none;
+        }
+    
+    #fechar{
+        display: none;
+    }
+    
+    .navigation-desk>li{
+        background-color: #848484;
+        padding: 4px 18px;
+        border-radius: 16px;
+    }
+    .navigation-desk>li>a{
+        color: #c7a1e6;
+        font-size: 22px
+    }
+    .navigation-desk>li>a:hover{
+        color: #fff;
+    }
+    #cols{
+    padding: 0px 250px;
+}
+        
+}
+/*fim TAMANHO DESKTOP*/

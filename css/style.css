@@ -94,7 +94,7 @@ h1{
 
 .img{
     width: 55%;
-    float: right
+    float: right;
 }
 /*Aqui termina INTRO*/
 
@@ -224,6 +224,27 @@ h2{
         height: 650px;
     }
     
+    .box-details.description{
+        padding: 10px;
+    }
+    h1, .box-paragrafo{
+        margin-bottom: 10px;
+    }
+    
+    .img{
+        min-width: 85%;
+    }
+    
+/*    SOBRE*/
+    .content.about, .box-about{
+        min-width: 55%;
+    }
+    .img-about{
+         min-width: 50%
+    }
+    .span{
+        font-size: 1.5em
+    }
     
 }
 /*fim TAMANHO MOBILE*/
@@ -254,6 +275,7 @@ h2{
     #cols{
     padding: 0px 250px;
 }
+    
         
 }
 /*fim TAMANHO DESKTOP*/

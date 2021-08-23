@@ -52,7 +52,12 @@
             
                 <p class="about-paragrafo lead">A young Web developer from Mozambique <span class="flag-icon flag-icon-mz"></span> , since 2020 building experience in related fields. <br>My goal is always try to provide beautiful and creative UIs for the Users, letting them feel comfortable and safe to Browse. <br>As for the moment, i'm open to work, and to contact me simply click the button down below.</p>
             
-                <a href="#" class="box-link" id="contacto">Contact</a>
+<!--              <a href="#" class="box-link" id="show">Contact</a>-->
+               <div class="popup box-link" onclick="myFunction()">Contact
+                 <span class="popuptext" id="myPopup">Email: Anselmolmaquete@gmail.com</span>
+               </div>
+                
+                 
             </div>
             
             <img src="images/aprovado.png" alt="" class="img-about">  
@@ -75,9 +80,16 @@
               
            });
            
-           $('#contacto').click( function() { alert('EMAIL: Anselmolmaquete@gmail.com'); });
+//           $('#contacto').click( function() { alert('EMAIL: Anselmolmaquete@gmail.com'); });
            
+            // When the user clicks on div, open the popup
+        
        });
+        
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+            }
            
 	</script>
     
